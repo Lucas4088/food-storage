@@ -1,0 +1,44 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+
+buildscript {
+	ext {
+		springBootVersion = '1.5.9.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+group = 'com.wat'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    group = 'com.wat'
+    version = '0.0.1-SNAPSHOT'
+    sourceCompatibility = 1.8
+
+	repositories {
+		mavenCentral()
+	}
+
+    dependencies {
+        compile 'org.springframework:spring-context:3.0.2.RELEASE'
+    }
+}

@@ -1,0 +1,22 @@
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://repo.spring.io/libs-release'
+    }
+}
+
+dependencies {
+    //<!-- Spring Context -->
+    //MysqlConnector
+    compile("mysql:mysql-connector-java:6.0.5")
+    //Hibernate
+    compile("org.hibernate:hibernate-core:5.2.12.Final")
+    //Apache Commons DBCP
+    compile("org.apache.commons:commons-dbcp2:2.1.1")
+    //spring data
+    compile("org.springframework.data:spring-data-commons:2.0.2.RELEASE")
+
+    compile project(":repository-port")
+    compile project(":model")
+}
+
