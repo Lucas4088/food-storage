@@ -14,6 +14,7 @@ db.username=root
 db.password=admin`
 
 oraz należy mieć zainstalowany gradle build tool
-i wywołać komendę 
-
+i wywołać komendy 
+ 
+`gradle wrapper`
 `gradlew :jfxRun`

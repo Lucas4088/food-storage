@@ -34,7 +34,7 @@ public class CategoryServiceCore implements CategoryFrontendService {
 
     @Override
     public void addNewCategory(String name) throws ElementAlreadyExistsException {
-        if (categoryRepositoryService.getCategoryByName(name).join() != null)
+        if (categoryRepositoryService.getCategoryByName(name).join().toString() != "NULL CATEGORY")
             throw new ElementAlreadyExistsException();
 
         categoryRepositoryService.addCategory(new Category(name));
