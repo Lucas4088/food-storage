@@ -22,7 +22,6 @@ import gui.model.events.*;
 import gui.services.UnitService;
 import gui.utils.I18N;
 import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.FXCollections;
 import javafx.geometry.Insets;
@@ -68,11 +67,9 @@ public class Main extends Application {
     private ListView<Recipe> recipesListView = new ListView<>();
 
     public static void main(String[] args) {
-        Platform.runLater(() -> {
-            ApplicationContext context = new AnnotationConfigApplicationContext(FrontendContextConfiguration.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext(FrontendContextConfiguration.class);
 
-            initialize(context);
-        });
+        initialize(context);
 
         launch(Main.class, args);
 

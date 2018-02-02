@@ -13,4 +13,9 @@ public abstract class AbstractCategory {
     }
 
     public abstract boolean isNil();
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }
