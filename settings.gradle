@@ -1,10 +1,10 @@
-include 'app'
-include 'frontend'
+rootProject.name = 'FoodManager'
+
 include 'core'
-include 'frontent-repoport'
 include 'model'
 include 'repository-port'
 include 'repository-adapter'
 include 'frontend-port'
-
+include 'food-restservice'
+include 'food-restservice-port'
 

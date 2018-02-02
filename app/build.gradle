@@ -1,4 +1,0 @@
-dependencies {
-
-    compile("org.springframework.boot:spring-boot-starter-test:1.5.9.RELEASE")
-}

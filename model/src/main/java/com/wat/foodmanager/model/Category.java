@@ -1,10 +1,10 @@
 package com.wat.foodmanager.model;
 
-public class Category {
-    String name;
+public class Category extends AbstractCategory {
+
 
     public Category(String name) {
-        this.name = name;
+        super(name);
     }
 
     public String getName() {
@@ -13,5 +13,10 @@ public class Category {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public boolean isNil() {
+        return false;
     }
 }

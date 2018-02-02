@@ -1,4 +1,6 @@
 dependencies {
     compile project(":repository-port")
+    compile project(":frontend-port")
     compile project(":model")
+    compile project(":food-restservice-port")
 }

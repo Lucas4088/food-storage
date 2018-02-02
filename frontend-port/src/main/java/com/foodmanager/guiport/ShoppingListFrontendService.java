@@ -1,6 +1,7 @@
 package com.foodmanager.guiport;
 
 import com.wat.foodmanager.model.ShoppingListProduct;
+import com.wat.foodmanager.model.StorageProduct;
 
 import java.util.List;
 
@@ -11,7 +12,9 @@ public interface ShoppingListFrontendService {
 
     void addShoppingListProduct(ShoppingListProduct shoppingListProduct);
 
-    void deleteShoppingListProduct(int id);
+    void deleteShoppingListProduct(ShoppingListProduct shoppingListProduct);
 
-    void updateShoppingListProduct(int id);
+    void updateShoppingListProduct(ShoppingListProduct shoppingListProduct);
+
+    void buyShoppingListProduct(ShoppingListProduct shoppingListProduct, StorageProduct storageProduct);
 }

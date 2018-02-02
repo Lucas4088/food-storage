@@ -1,12 +1,34 @@
 package com.wat.foodmanager.model;
 
-import java.util.Date;
-
 public class ShoppingListProduct {
+    private int id;
     private String name;
-    private Category category;
+    private AbstractCategory category;
     private Integer quantity;
     private Unit unit;
+
+    public ShoppingListProduct(String name, AbstractCategory category, Integer quantity, Unit unit) {
+        this.name = name;
+        this.category = category;
+        this.quantity = quantity;
+        this.unit = unit;
+    }
+
+    public ShoppingListProduct(int id, String name, AbstractCategory category, Integer quantity, Unit unit) {
+        this.id = id;
+        this.name = name;
+        this.category = category;
+        this.quantity = quantity;
+        this.unit = unit;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -16,7 +38,7 @@ public class ShoppingListProduct {
         this.name = name;
     }
 
-    public Category getCategory() {
+    public AbstractCategory getCategory() {
         return category;
     }
 

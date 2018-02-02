@@ -1,0 +1,7 @@
+dependencies {
+    // https://mvnrepository.com/artifact/com.owlike/genson
+    compile group: 'com.owlike', name: 'genson', version: '1.4'
+    compile project(":food-restservice-port")
+    compile project(":model")
+
+}
