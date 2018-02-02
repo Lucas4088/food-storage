@@ -1,0 +1,34 @@
+.custom-menu-button {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+    -fx-border: none;
+}
+
+.custom-menu-button:hover {
+    -fx-background-color: lightblue;
+}
+
+.green-row {
+    -fx-background-color: darkseagreen;
+    -fx-border-color: blanchedalmond;
+}
+
+.yellow-row {
+    -fx-background-color: gold;
+    -fx-border-color: blanchedalmond;
+}
+
+.orange-row {
+    -fx-background-color: darkorange;
+    -fx-border-color: blanchedalmond;
+}
+
+.red-row {
+    -fx-background-color: crimson;
+    -fx-border-color: blanchedalmond;
+}
+
+.expired-row {
+    -fx-background-color: dimgray;
+    -fx-border-color: blanchedalmond;
+}
